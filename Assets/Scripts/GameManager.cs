@@ -123,12 +123,12 @@ public class GameManager : MonoBehaviour
         {
             xScore++;
             xScoreText.text = xScore.ToString(); 
-            winnerText.text = "Player X Won!"; 
+            winnerText.text = "Player X Won " + turnCount + " turns!"; 
         }else if(playerTurn == 1)
         {
             oScore++; 
             oScoreText.text = oScore.ToString();
-            winnerText.text = "Player O Won!"; 
+            winnerText.text = "Player O Won In " + turnCount + " turns!"; 
         }
         winningLines[indexIn].SetActive(true);
     }
