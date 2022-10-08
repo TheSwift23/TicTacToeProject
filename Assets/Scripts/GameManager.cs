@@ -123,7 +123,7 @@ public class GameManager : MonoBehaviour
         {
             xScore++;
             xScoreText.text = xScore.ToString(); 
-            winnerText.text = "Player X Won " + turnCount + " turns!"; 
+            winnerText.text = "Player X Won In " + turnCount + " turns!"; 
         }else if(playerTurn == 1)
         {
             oScore++; 
